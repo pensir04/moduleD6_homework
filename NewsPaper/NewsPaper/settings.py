@@ -181,7 +181,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = 'smtp.mail.ru' # адрес исходящего сервера mail-почты для всех один и тот же
 EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый
 EMAIL_HOST_USER = 'pensir04' # ваше имя пользователя, например если ваша почта user@yandex.ru, то сюда надо писать user, иными словами, это всё то что идёт до собаки
-EMAIL_HOST_PASSWORD = 'GW5QJkbgiX9vzbmx0jeK' # пароль от почты
+EMAIL_HOST_PASSWORD = 'iWYdRHqWkHNWh7xQiijN' # пароль от почты
 EMAIL_USE_SSL = True
 
 # Format string for displaying run time timestamps in the Django admin site. The default
