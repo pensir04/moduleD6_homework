@@ -1,0 +1,17 @@
+<!--  наследуемся от шаблона default.html -->
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %} <!-- не забываем заранее загружать наши фильтры! -->
+
+<!-- Название у нас будет posts -->
+{% block title %}
+Posts
+{% endblock title %}
+
+<!-- В контенте на странице выводим новость, айди которой было передано в адрес -->
+{% block content %}
+    <h2>{{ post.header|censor:'*' }}</h2>
+    <h5>Дата публикации {{ post.time|date:'d-M-Y H:i' }}</h5>
+    <p>{{ post.text|censor:'*' }}</p>
+
+{% endblock content %}
